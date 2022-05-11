@@ -27,7 +27,7 @@ open OUT, "> /dev/shm/msg.$$";
 print OUT $message ;
 close OUT;
 
-system("/usr/sbin/sendmail -G -i -f $from -- $to < /dev/shm/msg.$$");
+#system("/usr/sbin/sendmail -G -i -f $from -- $to < /dev/shm/msg.$$");
 #system("/usr/bin//mac2unix -n /dev/shm/msg.$$ /dev/shm/msg.$$.conv; /usr/sbin/sendmail -G -i -f $from -- $to < /dev/shm/msg.$$.conv");
 system("/usr/bin//mac2unix -n /dev/shm/msg.$$ /dev/shm/msg.$$.conv; /usr/sbin/sendmail -G -i -f $from -- conta.teste2\@xxxxxx.org.br < /dev/shm/msg.$$.conv");
 
