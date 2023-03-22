@@ -1,4 +1,4 @@
-# Ultima Alteracao: Andre Antonioli - 08/03/2022
+# Simple pipe in perl
 
 $|=1;
 use MIME::Base64;
